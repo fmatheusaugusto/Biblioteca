@@ -10,7 +10,7 @@
                     <a href="livros.php"><i class="fa fa-book fa-fw"></i> Livros</a>
                 </li>
                 <li>
-                    <a href="livros.php"><i class="fa fa-user fa-fw"></i> Usuários</a>
+                    <a href="usuarios.php"><i class="fa fa-user fa-fw"></i> Usuários</a>
                 </li>
                 <li>
                     <a href="livros.php"><i class="glyphicon glyphicon-transfer"></i> Emprétimos</a>

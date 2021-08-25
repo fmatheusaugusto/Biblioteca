@@ -27,14 +27,16 @@ function lista_livros()
 function lista_usuarios()
 {
 	require("conectdb.php");
-	$sql = "SELECT * FROM livros ORDER BY titulo" or die("Erro");
+	$sql = "SELECT * FROM usuarios ORDER BY nome" or die("Erro");
 	$limite = mysqli_query($conexao, "$sql");
 
 	while ($sql = mysqli_fetch_array($limite)) {
-		$titulo = $sql['titulo'];
-		$autores = $sql['autores'];
-		$localizacao = $sql['localizacao'];
+		$nome = $sql['nome'];
+		$endereco_rua = $sql['endereco_rua'];
+		$endereco_numero = $sql['endereco_numero'];
+		$telefone = $sql['telefone'];
+		$cpf = $sql['cpf'];
 
-		include("../includes/lista_livros.php");
+		include("../includes/lista_usuarios.php");
 	}
 }

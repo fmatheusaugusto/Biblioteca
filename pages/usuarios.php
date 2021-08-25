@@ -79,15 +79,16 @@
                             <table width="100%" class="table table-dark table-striped table-bordered table-hover" id="dataTables-example">
                                 <thead>
                                     <tr>
-                                        <th>Título</th>
-                                        <th>Autores</th>
-                                        <th>Localização</th>
+                                        <th>Nome</th>
+                                        <th>Endereço</th>
+                                        <th>Telefone</th>
+                                        <th>Cpf</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <?php
                                     	include("../funcoes/lista.php");
-										lista_livros();
+										lista_usuarios();
 									?>
                                 </tbody>
                             </table>
