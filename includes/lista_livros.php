@@ -1,6 +1,6 @@
 ﻿<tr class="gradeA">
     <td>
-        <a class="" href="#"> <?php echo $titulo; ?> </a>
+        <?php echo $titulo; ?>
     </td>
     <td>
         <?php echo $autores; ?>

@@ -50,10 +50,10 @@
                 </button>
                 <a class="navbar-brand" href="#">“Um livro é um brinquedo feito com letras. Ler é brincar.”</a>
             </div>
-            
+
             <div class="navbar-default sidebar" role="navigation">
-                <?php 
-                	include("inc/menu_lateral.php");
+                <?php
+                include("inc/menu_lateral.php");
                 ?>
                 <!-- /.sidebar-collapse -->
             </div>
@@ -70,12 +70,13 @@
             <!-- /.row -->
             <div class="row"></div>
             <!-- /.row -->
-            <div class="row"><!-- /.col-lg-8 -->
-                   <div class="col-lg-12">
+            <div class="row">
+                <!-- /.col-lg-8 -->
+                <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading"></div>
                     </div>
-                   </div>
+                </div>
                 <!-- /.col-lg-4 -->
             </div>
             <!-- /.row -->
@@ -101,20 +102,20 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
-     <!-- DataTables JavaScript -->
+    <!-- DataTables JavaScript -->
     <script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
     <script src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
     <script src="../vendor/datatables-responsive/dataTables.responsive.js"></script>
 
-   
+
 
     <!-- Page-Level Demo Scripts - Tables - Use for reference -->
     <script>
-    $(document).ready(function() {
-        $('#dataTables-example').DataTable({
-            responsive: true
+        $(document).ready(function() {
+            $('#dataTables-example').DataTable({
+                responsive: true
+            });
         });
-    });
     </script>
 
 </body>
