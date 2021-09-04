@@ -27,25 +27,30 @@ $page_nav = array(
 		"url" => "ajax/dashboard.php",
 		"icon" => "fa-home txt-color-yellow"
 	),
-	"cadastro" => array(
-		"title" => "Cadastro",
-		"icon" => "fa-pencil-square-o txt-color-green",
+	"pesquisar" => array(
+		"title" => "Pesquisar",
+		"icon" => "fa-search txt-color-blue",
 		"sub" => array(
 			"livro" => array(
 				"title" => "Livro",
 				"icon" => "fa-book",
-				"url" => "ajax/table.php"
+				"url" => "ajax/pesquisa_livro.php"
 			),
 			"usuário" => array(
 				"title" => "Usuário",
 				"icon" => "fa-user",
-				"url" => "ajax/datatables.php",
+				"url" => "ajax/pesquisa_usuario.php",
+			),
+            "empréstimos" => array(
+				"title" => "Empréstimos",
+				"icon" => "fa-exchange",
+				"url" => "ajax/pesquisa_emprestimo.php"
 			)
 		)
 	),
-	"pesquisa" => array(
-		"title" => "Pesquisar",
-		"icon" => "fa-search txt-color-blue",
+	"cadastrar" => array(
+		"title" => "Cadastrar",
+		"icon" => "fa-pencil txt-color-green",
 		"sub" => array(
 			"livro" => array(
 				"title" => "Livros",
@@ -56,11 +61,6 @@ $page_nav = array(
 				"title" => "Usuários",
 				"icon" => "fa-user",
 				"url" => "ajax/form-templates.php"
-			),
-            "empréstimos" => array(
-				"title" => "Empréstimos",
-				"icon" => "fa-exchange",
-				"url" => "ajax/validation.php"
 			)
 		)
 	),
