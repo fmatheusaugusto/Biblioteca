@@ -7,7 +7,7 @@
 <div class="inbox-info-bar">
 	<div class="row">
 		<div class="col-sm-9">
-			<img src="<?php echo ASSETS_URL; ?>/img/avatars/5.png" alt="me" class="away">
+			<img src="img/avatars/5.png" alt="me" class="away">
 			<strong>Sadi Orlaf</strong>
 			<span class="hidden-mobile">&lt;sadi.orlaf@smartadmin.com&gt;to <strong>me</strong> on <i>12:10AM, 12 March 2013</i></span> 
 		</div>
@@ -70,7 +70,7 @@
 
 	</small>
 	<br>	
-	<img src="<?php echo ASSETS_URL; ?>/img/logo-blacknwhite.png" height="20" width="auto" style="margin-top:7px; padding-right:9px; border-right:1px dotted #9B9B9B;" />
+	<img src="img/logo-blacknwhite.png" height="20" width="auto" style="margin-top:7px; padding-right:9px; border-right:1px dotted #9B9B9B;" />
 </div>
 
 <div class="inbox-download">
@@ -80,7 +80,7 @@
 		<li>
 			<div class="well well-sm">
 				<span>
-					<img src="<?php echo ASSETS_URL; ?>/img/demo/sample.jpg">
+					<img src="img/demo/sample.jpg">
 				</span>
 				<br>
 				<strong>rocketlaunch.jpg</strong> 
@@ -140,9 +140,9 @@
 	</div>	
 
 	<ul class="list-inline">
-		<li><img src="<?php echo ASSETS_URL; ?>/img/avatars/5.png" alt="me" width="30px"></li>
-		<li><img src="<?php echo ASSETS_URL; ?>/img/avatars/3.png" alt="me" width="30px"></li>
-		<li><img src="<?php echo ASSETS_URL; ?>/img/avatars/sunny.png" alt="me" width="30px"></li>
+		<li><img src="img/avatars/5.png" alt="me" width="30px"></li>
+		<li><img src="img/avatars/3.png" alt="me" width="30px"></li>
+		<li><img src="img/avatars/sunny.png" alt="me" width="30px"></li>
 		<li><a href="javascript:void(0);">1 more</a></li>
 	</ul>
 
@@ -150,8 +150,57 @@
 
 <script type="text/javascript">
 	
-	// DO NOT REMOVE : GLOBAL FUNCTIONS!
-	//pageSetUp();
+	/* DO NOT REMOVE : GLOBAL FUNCTIONS!
+	 *
+	 * pageSetUp(); WILL CALL THE FOLLOWING FUNCTIONS
+	 *
+	 * // activate tooltips
+	 * $("[rel=tooltip]").tooltip();
+	 *
+	 * // activate popovers
+	 * $("[rel=popover]").popover();
+	 *
+	 * // activate popovers with hover states
+	 * $("[rel=popover-hover]").popover({ trigger: "hover" });
+	 *
+	 * // activate inline charts
+	 * runAllCharts();
+	 *
+	 * // setup widgets
+	 * setup_widgets_desktop();
+	 *
+	 * // run form elements
+	 * runAllForms();
+	 *
+	 ********************************
+	 *
+	 * pageSetUp() is needed whenever you load a page.
+	 * It initializes and checks for all basic elements of the page
+	 * and makes rendering easier.
+	 *
+	 */
+
+	pageSetUp();
+	
+	/*
+	 * ALL PAGE RELATED SCRIPTS CAN GO BELOW HERE
+	 * eg alert("my home function");
+	 * 
+	 * var pagefunction = function() {
+	 *   ...
+	 * }
+	 * loadScript("js/plugin/_PLUGIN_NAME_.js", pagefunction);
+	 * 
+	 * TO LOAD A SCRIPT:
+	 * var pagefunction = function (){ 
+	 *  loadScript(".../plugin.js", run_after_loaded);	
+	 * }
+	 * 
+	 * OR
+	 * 
+	 * loadScript(".../plugin.js", run_after_loaded);
+	 */
+	
 	
 	// PAGE RELATED SCRIPTS
 	

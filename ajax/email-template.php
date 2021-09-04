@@ -16,36 +16,36 @@
 
 	<!-- row -->
 	<div class="row">
-		
+
 		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
 			<img src="<?php echo ASSETS_URL; ?>/img/demo/basic.png" alt="Basic Email Template" style="width:100%; height:auto;">
 			<br>
 			<br>
-			<a href="../COMMON_ASSETS/goodies/email-templates/basic.php" target="_blank" class="btn btn-primary btn-block">Basic Email Template</a>
+			<a href="../../COMMON_ASSETS/GOODIES/email-templates/basic.html" target="_blank" class="btn btn-primary btn-block">Basic Email Template</a>
 		</div>
 		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
 			<img src="<?php echo ASSETS_URL; ?>/img/demo/sidebar.png" alt="Sidebar Email Template" style="width:100%; height:auto;">
 			<br>
 			<br>
-			<a href="../COMMON_ASSETS/goodies/email-templates/sidebar.php" target="_blank" class="btn btn-primary btn-block">Sidebar Email Template</a>
+			<a href="../../COMMON_ASSETS/GOODIES/email-templates/sidebar.html" target="_blank" class="btn btn-primary btn-block">Sidebar Email Template</a>
 		</div>
 		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
 			<img src="<?php echo ASSETS_URL; ?>/img/demo/hero.png" alt="Hero Email Template" style="width:100%; height:auto;">
 			<br>
 			<br>
-			<a href="../COMMON_ASSETS/goodies/email-templates/hero.php" target="_blank" class="btn btn-primary btn-block">Hero Email Template</a>
+			<a href="../../COMMON_ASSETS/GOODIES/email-templates/hero.html" target="_blank" class="btn btn-primary btn-block">Hero Email Template</a>
 		</div>
 		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
 			<img src="<?php echo ASSETS_URL; ?>/img/demo/sidebarhero.png" alt="Sidebar with Hero" style="width:100%; height:auto;">
 			<br>
 			<br>
-			<a href="../COMMON_ASSETS/goodies/email-templates/sidebar-hero.php" target="_blank" class="btn btn-primary btn-block">Sidebar with Hero</a>
+			<a href="../../COMMON_ASSETS/GOODIES/email-templates/sidebar-hero.html" target="_blank" class="btn btn-primary btn-block">Sidebar with Hero</a>
 		</div>
 		<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
 			<img src="<?php echo ASSETS_URL; ?>/img/demo/newsletter.png" alt="Newsletter Email Template" style="width:100%; height:auto;">
 			<br>
 			<br>
-			<a href="../COMMON_ASSETS/goodies/email-templates/newsletter.php" target="_blank" class="btn btn-primary btn-block">Newsletter Template</a>
+			<a href="../../COMMON_ASSETS/GOODIES/email-templates/newsletter.html" target="_blank" class="btn btn-primary btn-block">Newsletter Template</a>
 		</div>								
 		
 	</div>
@@ -54,9 +54,56 @@
 
 <script type="text/javascript">
 	
-	// DO NOT REMOVE : GLOBAL FUNCTIONS!
+	/* DO NOT REMOVE : GLOBAL FUNCTIONS!
+	 *
+	 * pageSetUp(); WILL CALL THE FOLLOWING FUNCTIONS
+	 *
+	 * // activate tooltips
+	 * $("[rel=tooltip]").tooltip();
+	 *
+	 * // activate popovers
+	 * $("[rel=popover]").popover();
+	 *
+	 * // activate popovers with hover states
+	 * $("[rel=popover-hover]").popover({ trigger: "hover" });
+	 *
+	 * // activate inline charts
+	 * runAllCharts();
+	 *
+	 * // setup widgets
+	 * setup_widgets_desktop();
+	 *
+	 * // run form elements
+	 * runAllForms();
+	 *
+	 ********************************
+	 *
+	 * pageSetUp() is needed whenever you load a page.
+	 * It initializes and checks for all basic elements of the page
+	 * and makes rendering easier.
+	 *
+	 */
+
 	pageSetUp();
 	
-	// PAGE RELATED SCRIPTS
+	/*
+	 * ALL PAGE RELATED SCRIPTS CAN GO BELOW HERE
+	 * eg alert("my home function");
+	 * 
+	 * var pagefunction = function() {
+	 *   ...
+	 * }
+	 * loadScript("js/plugin/_PLUGIN_NAME_.js", pagefunction);
+	 * 
+	 * TO LOAD A SCRIPT:
+	 * var pagefunction = function (){ 
+	 *  loadScript(".../plugin.js", run_after_loaded);	
+	 * }
+	 * 
+	 * OR
+	 * 
+	 * loadScript(".../plugin.js", run_after_loaded);
+	 */
+	
 	
 </script>

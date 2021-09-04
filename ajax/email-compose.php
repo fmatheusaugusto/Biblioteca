@@ -92,7 +92,7 @@
 	
 		<div id="emailbody">
 			
-				<br><br><br><br><br>Thanks,<br><strong>John Doe</strong><br><br><small>CEO - SmartAdmin <br> 231 Ajax Rd, Detroit MI - 48212, USA<br><i class="fa fa-phone"> (313) 647 4761</i></small><br><img src="<?php echo ASSETS_URL; ?>/img/logo-blacknwhite.png" height="20" width="auto" style="margin-top:7px; padding-right:9px; border-right:1px dotted #9B9B9B;" />		
+				<br><br><br><br><br>Thanks,<br><strong>John Doe</strong><br><br><small>CEO - SmartAdmin <br> 231 Ajax Rd, Detroit MI - 48212, USA<br><i class="fa fa-phone"> (313) 647 4761</i></small><br><img src="img/logo-blacknwhite.png" height="20" width="auto" style="margin-top:7px; padding-right:9px; border-right:1px dotted #9B9B9B;" />		
 		</div>	
 	</div>
 	
@@ -148,9 +148,9 @@
 	</div>	
 
 	<ul class="list-inline">
-		<li><img src="<?php echo ASSETS_URL; ?>/img/avatars/5.png" alt="me" width="30px"></li>
-		<li><img src="<?php echo ASSETS_URL; ?>/img/avatars/3.png" alt="me" width="30px"></li>
-		<li><img src="<?php echo ASSETS_URL; ?>/img/avatars/sunny.png" alt="me" width="30px"></li>
+		<li><img src="img/avatars/5.png" alt="me" width="30px"></li>
+		<li><img src="img/avatars/3.png" alt="me" width="30px"></li>
+		<li><img src="img/avatars/sunny.png" alt="me" width="30px"></li>
 		<li><a href="javascript:void(0);">1 more</a></li>
 	</ul>
 
@@ -158,8 +158,39 @@
 
 <script type="text/javascript">
 	
-	// DO NOT REMOVE : GLOBAL FUNCTIONS!
+	/* DO NOT REMOVE : GLOBAL FUNCTIONS!
+	 *
+	 * pageSetUp(); WILL CALL THE FOLLOWING FUNCTIONS
+	 *
+	 * // activate tooltips
+	 * $("[rel=tooltip]").tooltip();
+	 *
+	 * // activate popovers
+	 * $("[rel=popover]").popover();
+	 *
+	 * // activate popovers with hover states
+	 * $("[rel=popover-hover]").popover({ trigger: "hover" });
+	 *
+	 * // activate inline charts
+	 * runAllCharts();
+	 *
+	 * // setup widgets
+	 * setup_widgets_desktop();
+	 *
+	 * // run form elements
+	 * runAllForms();
+	 *
+	 ********************************
+	 *
+	 * pageSetUp() is needed whenever you load a page.
+	 * It initializes and checks for all basic elements of the page
+	 * and makes rendering easier.
+	 *
+	 */
 
+	//pageSetUp();
+	
+	//here we only run
 	runAllForms();
 
 	 // PAGE RELATED SCRIPTS
@@ -169,7 +200,7 @@
 	/*
 	 * SUMMERNOTE EDITOR
 	 */
-	loadScript("<?php echo ASSETS_URL; ?>/js/plugin/summernote/summernote.min.js", iniEmailBody);
+	loadScript("js/plugin/summernote/summernote.min.js", iniEmailBody);
 
 	function iniEmailBody() {
 	    $('#emailbody').summernote({

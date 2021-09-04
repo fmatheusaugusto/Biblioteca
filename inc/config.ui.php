@@ -23,58 +23,52 @@ ex:
 */
 $page_nav = array(
 	"dashboard" => array(
-		"title" => "",
+		"title" => "Início",
 		"url" => APP_URL,
-		"icon" => "fa-home"
+		"icon" => "fa-home txt-color-yellow"
 	),
 	"cadastro" => array(
 		"title" => "Cadastro",
-		"icon" => "fa-pencil-square-o txt-color-blue",
+		"icon" => "fa-pencil-square-o txt-color-green",
 		"sub" => array(
 			"livro" => array(
 				"title" => "Livro",
-				"icon" => "fa-group",
+				"icon" => "fa-book",
 				"url" => APP_URL."../index.php"
 			),
 			"usuario" => array(
 				"title" => "Usuário",
-				"icon" => "fa-group",
+				"icon" => "fa-user",
 				"url" => APP_URL."../index.php"
 			)
 		)
 	),
 	"pesquisa" => array(
 		"title" => "Pesquisa",
-		"icon" => "fa-search txt-color-green",
+		"icon" => "fa-search txt-color-blue",
 		"sub" => array(
 			"livro" => array(
 				"title" => "Livro",
-				"icon" => "fa-search-plus",
-				"url" => APP_URL."../index.php"
+				"icon" => "fa-book",
+				"url" => APP_URL
 			),
 			"usuario" => array(
 				"title" => "Usuário",
-				"icon" => "fa-search-plus",
-				"url" => APP_URL."../index.php"
+				"icon" => "fa-user",
+				"url" => APP_URL
+			),
+			"emprestimo" => array(
+				"title" => "Livros emprestados",
+				"icon" => "fa-exchange",
+				"url" => APP_URL
 			)
 		)	
 	),
-	"relatorio" => array(
-		"title" => "Relatórios",
-		"icon" => "fa-folder txt-color-red",
-		"sub" => array(
-			"pesquisa" => array(
-				"title" => "Ativos no mês",
-				"icon" => "fa-folder",
-				"url" => APP_URL."/relatorios/gerar_planilha.php"
-			)
-		)		
-	),
-	"mensal" => array(
-		"title" => "Fechamento Mensal",
+	"emprestimo" => array(
+		"title" => "Empréstimos",
 		"url" => APP_URL,
-		"icon" => "fa-calendar txt-color-yellow",
-		"url" => APP_URL."/fechamento_mensal.php"
+		"icon" => "fa-calendar",
+		"url" => APP_URL
 	),
 );
 
