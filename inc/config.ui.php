@@ -31,10 +31,15 @@ $page_nav = array(
 		"title" => "Cadastro",
 		"icon" => "fa-pencil-square-o txt-color-blue",
 		"sub" => array(
-			"empresa" => array(
+			"livro" => array(
 				"title" => "Livro",
 				"icon" => "fa-group",
-				"url" => APP_URL."/includes/cadastra_livros.php"
+				"url" => APP_URL."../index.php"
+			),
+			"usuario" => array(
+				"title" => "Usuário",
+				"icon" => "fa-group",
+				"url" => APP_URL."../index.php"
 			)
 		)
 	),
@@ -42,12 +47,17 @@ $page_nav = array(
 		"title" => "Pesquisa",
 		"icon" => "fa-search txt-color-green",
 		"sub" => array(
-			"pesquisa" => array(
-				"title" => "Livros",
+			"livro" => array(
+				"title" => "Livro",
 				"icon" => "fa-search-plus",
-				"url" => APP_URL."/tabela_geral.php"
+				"url" => APP_URL."../index.php"
+			),
+			"usuario" => array(
+				"title" => "Usuário",
+				"icon" => "fa-search-plus",
+				"url" => APP_URL."../index.php"
 			)
-		)		
+		)	
 	),
 	"relatorio" => array(
 		"title" => "Relatórios",
