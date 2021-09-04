@@ -23,7 +23,7 @@ ex:
 */
 $page_nav = array(
 	"dashboard" => array(
-		"title" => "Início",
+		"title" => "",
 		"url" => APP_URL,
 		"icon" => "fa-home"
 	),
