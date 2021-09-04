@@ -14,7 +14,7 @@ ex:
 "dashboard" => array(
 	"title" => "Display Title",
 	"url" => "http://yoururl.com",
-	"url_target" => "_blank",
+	"url_target" => "_self",
 	"icon" => "fa-home",
 	"label_htm" => "<span>Add your custom label/badge html here</span>",
 	"sub" => array() //contains array of sub items with the same format as the parent
@@ -22,9 +22,9 @@ ex:
 
 */
 $page_nav = array(
-	"início" => array(
+	"inicio" => array(
 		"title" => "Início",
-		"url" => "ajax/dashboard.php",
+		"url" => "index.php",
 		"icon" => "fa-home txt-color-yellow"
 	),
 	"cadastro" => array(
@@ -34,40 +34,41 @@ $page_nav = array(
 			"livro" => array(
 				"title" => "Livro",
 				"icon" => "fa-book",
-				"url" => "ajax/table.php"
+				"url" => APP_URL."../index.php"
 			),
-			"usuário" => array(
+			"usuario" => array(
 				"title" => "Usuário",
 				"icon" => "fa-user",
-				"url" => "ajax/datatables.php",
+				"url" => APP_URL."../index.php"
 			)
 		)
 	),
 	"pesquisa" => array(
-		"title" => "Pesquisar",
+		"title" => "Pesquisa",
 		"icon" => "fa-search txt-color-blue",
 		"sub" => array(
 			"livro" => array(
-				"title" => "Livros",
+				"title" => "Livro",
 				"icon" => "fa-book",
-				"url" => "ajax/form-elements.php"
+				"url" => APP_URL
 			),
-            "usuário" => array(
-				"title" => "Usuários",
+			"usuario" => array(
+				"title" => "Usuário",
 				"icon" => "fa-user",
-				"url" => "ajax/form-templates.php"
+				"url" => APP_URL
 			),
-            "empréstimos" => array(
-				"title" => "Empréstimos",
+			"emprestimo" => array(
+				"title" => "Livros emprestados",
 				"icon" => "fa-exchange",
-				"url" => "ajax/validation.php"
+				"url" => APP_URL
 			)
-		)
+		)	
 	),
-	"empréstimos" => array(
+	"emprestimo" => array(
 		"title" => "Empréstimos",
-		"url" => "ajax/dashboard.php",
-		"icon" => "fa-exchange",
+		"url" => APP_URL,
+		"icon" => "fa-calendar",
+		"url" => APP_URL
 	),
 );
 
