@@ -66,7 +66,7 @@ $page_nav = array(
 	),
 	"empréstimos" => array(
 		"title" => "Empréstimos",
-		"url" => "ajax/dashboard.php",
+		"url" => "",
 		"icon" => "fa-exchange",
 	),
 );

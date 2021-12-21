@@ -75,20 +75,15 @@
 		?>
 				<!-- HEADER -->
 				<header id="header">
+					
 					<div id="logo-group">
 
-						<!-- PLACE YOUR LOGO HERE -->
 						<span id="logo"> <img src="<?php echo ASSETS_URL; ?>/img/logo.png" alt="SmartAdmin"> </span>
-						<!-- END LOGO PLACEHOLDER -->
-
-						<!-- Note: The activity badge color changes when clicked and resets the number to 0
-						Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications -->
+						<!--
 						<span id="activity" class="activity-dropdown"> <i class="fa fa-user"></i> <b class="badge"> 21 </b> </span>
 
-						<!-- AJAX-DROPDOWN : control this dropdown height, look and feel from the LESS variable file -->
 						<div class="ajax-dropdown">
 
-							<!-- the ID links are fetched via AJAX to the ajax container "ajax-notifications" -->
 							<div class="btn-group btn-group-justified" data-toggle="buttons">
 								<label class="btn btn-default">
 									<input type="radio" name="activity" id="<?php echo APP_URL; ?>/ajax/notify/mail.php">
@@ -101,7 +96,6 @@
 									Tasks (4) </label>
 							</div>
 
-							<!-- notification content -->
 							<div class="ajax-notifications custom-scroll">
 
 								<div class="alert alert-transparent">
@@ -112,26 +106,22 @@
 								<i class="fa fa-lock fa-4x fa-border"></i>
 
 							</div>
-							<!-- end notification content -->
 
-							<!-- footer: refresh area -->
 							<span> Last updated on: 12/12/2013 9:43AM
 								<button type="button" data-loading-text="<i class='fa fa-refresh fa-spin'></i> Loading..." class="btn btn-xs btn-default pull-right">
 									<i class="fa fa-refresh"></i>
 								</button> </span>
-							<!-- end footer -->
 
 						</div>
-						<!-- END AJAX-DROPDOWN -->
+						-->
 					</div>
-
-					<!-- projects dropdown -->
+					
+					<!-- projects dropdown
 					<div class="project-context hidden-xs">
 
 						<span class="label">Projects:</span>
 						<span id="project-selector" class="popover-trigger-element dropdown-toggle" data-toggle="dropdown">Recent projects <i class="fa fa-angle-down"></i></span>
 
-						<!-- Suggestion: populate this list with fetch and push technique -->
 						<ul class="dropdown-menu">
 							<li>
 								<a href="javascript:void(0);">Online e-merchant management system - attaching integration with the iOS</a>
@@ -147,10 +137,9 @@
 								<a href="javascript:void(0);"><i class="fa fa-power-off"></i> Clear</a>
 							</li>
 						</ul>
-						<!-- end dropdown-menu-->
 
 					</div>
-					<!-- end projects dropdown -->
+					end projects dropdown -->
 
 					<!-- pulled right: nav area -->
 					<div class="pull-right">
@@ -193,9 +182,11 @@
 						</ul>
 
 						<!-- logout button -->
+						<!--
 						<div id="logout" class="btn-header transparent pull-right">
 							<span> <a href="<?php echo APP_URL; ?>/login.php" title="Sign Out" data-action="userLogout" data-logout-msg="You can improve your security further after logging out by closing this opened browser"><i class="fa fa-sign-out"></i></a> </span>
 						</div>
+						-->
 						<!-- end logout button -->
 
 						<!-- search mobile button (this is hidden till mobile view port) -->
@@ -205,6 +196,7 @@
 						<!-- end search mobile button -->
 
 						<!-- input: search field -->
+						<!--
 						<form action="#ajax/search.php" class="header-search pull-right">
 							<input type="text" name="param" placeholder="Find reports and more" id="search-fld">
 							<button type="submit">
@@ -212,6 +204,7 @@
 							</button>
 							<a href="javascript:void(0);" id="cancel-search-js" title="Cancel Search"><i class="fa fa-times"></i></a>
 						</form>
+						-->
 						<!-- end input: search field -->
 
 						<!-- fullscreen button -->
@@ -221,6 +214,7 @@
 						<!-- end fullscreen button -->
 
 						<!-- #Voice Command: Start Speech -->
+						<!--
 						<div id="speech-btn" class="btn-header transparent pull-right hidden-sm hidden-xs">
 							<div> 
 								<a href="javascript:void(0)" title="Voice Command" data-action="voiceCommand"><i class="fa fa-microphone"></i></a> 
@@ -238,10 +232,11 @@
 								</div>
 							</div>
 						</div>
+						-->
 						<!-- end voice command -->
 
 						<!-- multiple lang dropdown : find all flags in the flags page -->
-											
+						<!--					
 						<ul class="header-dropdown-list hidden-xs">
 							<li>
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
@@ -280,7 +275,7 @@
 								</ul>
 							</li>
 						</ul>
-						
+						-->
 						<!-- end multiple lang -->
 
 					</div>
