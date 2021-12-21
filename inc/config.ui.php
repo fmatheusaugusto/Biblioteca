@@ -42,7 +42,7 @@ $page_nav = array(
 				"url" => "ajax/pesquisa_usuario.php",
 			),
             "empréstimos" => array(
-				"title" => "Empréstimos",
+				"title" => "Empréstimos feitos",
 				"icon" => "fa-exchange",
 				"url" => "ajax/pesquisa_emprestimo.php"
 			)
@@ -65,7 +65,7 @@ $page_nav = array(
 		)
 	),
 	"empréstimos" => array(
-		"title" => "Empréstimos",
+		"title" => "Realizar empréstimo",
 		"url" => "",
 		"icon" => "fa-exchange",
 	),
