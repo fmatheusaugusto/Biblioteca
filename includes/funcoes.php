@@ -19,6 +19,7 @@ function lista_livros()
 		$titulo = $sql['titulo'];
 		$autores = $sql['autores'];
 		$localizacao = $sql['localizacao'];
+		$codigo = $sql['codigo'];
 
 		include("../includes/lista_livros.php");
 	}
