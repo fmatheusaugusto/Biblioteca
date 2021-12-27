@@ -20,8 +20,7 @@ function lista_livros()
 		$autores = $sql['autores'];
 		$localizacao = $sql['localizacao'];
 		$codigo = $sql['codigo'];
-
-		include("../includes/lista_livros.php");
+		include("lista_livros.php");
 	}
 }
 
@@ -38,6 +37,6 @@ function lista_usuarios()
 		$telefone = $sql['telefone'];
 		$cpf = $sql['cpf'];
 
-		include("../includes/lista_usuarios.php");
+		include("lista_usuarios.php");
 	}
 }

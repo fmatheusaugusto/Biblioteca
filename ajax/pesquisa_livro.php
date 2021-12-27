@@ -51,24 +51,24 @@
 					<header>
 						<span class="widget-icon"> <i class="fa fa-table"></i> </span>
 						<h2>Pesquisar Livros </h2>
-
 					</header>
 
 					<!-- widget div-->
 					<div>
-
+					
 						<!-- widget edit box -->
 						<div class="jarviswidget-editbox">
 							<!-- This area used as dropdown edit box -->
+							
 
 						</div>
 						<!-- end widget edit box -->
-
+						
 						<!-- widget content -->
 						<div class="widget-body no-padding">
-
+						
 							<table id="datatable_fixed_column" class="table table-striped table-bordered" width="100%">
-
+							
 								<thead>
 									<tr>
 										<th class="hasinput" style="width:17%">
@@ -93,20 +93,10 @@
 								</thead>
 
 								<tbody>
-									<tr>
-										<td>
-											teste
-										</td>
-										<td>
-											teste
-										</td>
-										<td>
-											teste
-										</td>
-										<td>
-											teste
-										</td>
-									</tr>
+									<?php
+										include("../includes/funcoes.php");
+										lista_livros();
+									?>
 								</tbody>
 
 							</table>
