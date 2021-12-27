@@ -1,4 +1,4 @@
-﻿<tr class="gradeA">
+﻿<tr>
     <td>
         <?php echo $titulo; ?>
     </td>

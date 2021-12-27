@@ -13,7 +13,7 @@ function lista_livros()
 {
 	require("conectdb.php");
 	$sql = "SELECT * FROM livros ORDER BY titulo" or die("Erro");
-	$limite = mysqli_query($conexao, "$sql");
+	$limite = mysqli_query($conexao, $sql);
 
 	while ($sql = mysqli_fetch_array($limite)) {
 		$titulo = $sql['titulo'];
