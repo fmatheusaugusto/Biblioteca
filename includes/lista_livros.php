@@ -11,4 +11,12 @@
     <td>
         <?php echo $codigo; ?>
     </td>
+    <td>
+        <button type="submit" class="btn btn-warning">
+            Editar
+        </button>
+        <button type="submit" class="btn btn-danger">
+            Excluir
+        </button>
+    </td>
 </tr>

@@ -36,7 +36,6 @@ function lista_usuarios()
 		$endereco_numero = $sql['endereco_numero'];
 		$telefone = $sql['telefone'];
 		$cpf = $sql['cpf'];
-
 		include("lista_usuarios.php");
 	}
 }
