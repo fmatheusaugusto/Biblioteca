@@ -39,3 +39,32 @@ function lista_livros()
 		include("lista_livros.php");
 	}
 }
+
+function inclui_usuarios(){
+	require("conectdb.php");
+    $nome = $_POST['nome']; 
+    $telefone = $_POST['telefone'];
+    $cpf = $_POST['cpf'];
+    $data_nasc = $_POST['data_nasc'];
+    $endereco_rua = $_POST['endereco_rua'];
+    $endereco_numero = $_POST['endereco_numero'];
+    
+    $query = "INSERT INTO usuarios (nome,telefone,cpf,data_nasc,endereco_rua,endereco_numero) VALUES (null,'$nome','$telefone','$cpf','$data_nasc','$endereco_rua','$endereco_numero')";
+    mysqli_query($conexao, $query);
+    echo"Ok";
+}
+
+function inclui_livros(){
+	require("conectdb.php");
+    $titulo = $_POST['titulo']; 
+    $classificacao = $_POST['classificacao'];
+    $autores = $_POST['autores'];
+    $codigo = $_POST['codigo'];
+    $exemplar = $_POST['exemplar'];
+    $localizacao = $_POST['localizacao'];
+	$data_hoje = $_POST['data_hoje'];
+    
+    $query = "INSERT INTO livros (titulo,classificacao,autores,codigo,exemplar,localizacao,data_hoje) VALUES (null,'$titulo','$classificacao','$autores','$codigo','$exemplar','$localizacao', ,'$data_hoje')";
+    mysqli_query($conexao, $query);
+    echo"Ok";
+}

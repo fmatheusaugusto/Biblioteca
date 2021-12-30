@@ -67,7 +67,7 @@
 					<!-- widget content -->
 					<div class="widget-body no-padding">
 						
-						<form action="inludes/includes.php" id="cad_usuarios" method="post" class="smart-form" novalidate="novalidate">
+						<form action="includes/includes.php" method="post" class="smart-form" novalidate="novalidate">
 
 							<fieldset>
 								<div class="row">
@@ -108,7 +108,6 @@
 									</section>
 								</div>
 							</fieldset>
-							<input type="hidden" name="data_hoje" value= <?php echo $hoje ?>>
 							<footer>
 								<button type="submit" class="btn btn-primary">
 									Salvar

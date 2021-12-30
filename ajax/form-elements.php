@@ -94,6 +94,7 @@
 											<input type="text" name="localizacao" placeholder="Localização">
 										</label>
 									</section>
+									<input type="hidden" name="data_hoje" value= <?php echo $hoje ?>>
 								</div>
 
 							<footer>
