@@ -1,4 +1,4 @@
-﻿<tr>
+<tr>
     <td>
         <?php echo $titulo; ?>
     </td>
