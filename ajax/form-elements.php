@@ -34,6 +34,12 @@
 				-->
 				<header>
 					<span class="widget-icon"> <i class="fa fa-edit"></i> </span>
+					<h2>
+						<?php
+							$hoje = date('d/m/Y');
+							echo $hoje;
+						?>
+					</h2>
 				</header>
 
 				<!-- widget div-->

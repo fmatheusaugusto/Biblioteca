@@ -45,7 +45,13 @@
 					
 				-->
 				<header>
-					<span class="widget-icon"> <i class="fa fa-edit"></i> </span>				
+					<span class="widget-icon"> <i class="fa fa-edit"></i> </span>	
+					<h2>
+						<?php
+						$hoje = date('d/m/Y');
+						echo $hoje;
+						?>
+					</h2>			
 				</header>
 
 				<!-- widget div-->
@@ -61,7 +67,7 @@
 					<!-- widget content -->
 					<div class="widget-body no-padding">
 						
-						<form action="" id="cad_usuarios" method="post" class="smart-form" novalidate="novalidate">
+						<form action="inludes/includes.php" id="cad_usuarios" method="post" class="smart-form" novalidate="novalidate">
 
 							<fieldset>
 								<div class="row">
@@ -82,7 +88,7 @@
 									</section>
 									<section class="col col-3">
 										<label class="input"> <i class="icon-prepend fa fa-user"></i>
-											<input type="date" name="data_nasc" placeholder="Data de Nascimento" data-mask="999.999.999-99">
+											<input type="date" name="data_nasc" placeholder="Data de Nascimento">
 										</label>
 									</section>
 								</div>
@@ -102,7 +108,7 @@
 									</section>
 								</div>
 							</fieldset>
-
+							<input type="hidden" name="data_hoje" value= <?php echo $hoje ?>>
 							<footer>
 								<button type="submit" class="btn btn-primary">
 									Salvar
