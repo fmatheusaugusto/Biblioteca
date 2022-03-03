@@ -55,7 +55,7 @@
 					<!-- widget content -->
 					<div class="widget-body no-padding">
 
-						<form action="" id="cad_livros" method="post" class="smart-form">
+						<form action="includes/inclui_livros.php" id="cad_livros" method="post" class="smart-form">
 							<header>
 								Insira os dados cuidadosamente
 							</header>

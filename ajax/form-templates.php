@@ -67,7 +67,7 @@
 					<!-- widget content -->
 					<div class="widget-body no-padding">
 						
-						<form action="includes/includes.php" method="post" class="smart-form" novalidate="novalidate">
+						<form action="includes/inclui_usuarios.php" method="post" class="smart-form" novalidate="novalidate">
 
 							<fieldset>
 								<div class="row">

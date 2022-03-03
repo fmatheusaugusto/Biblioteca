@@ -89,11 +89,11 @@
 										</th>
 									</tr>
 									<tr>
-										<th>Título</th>
+										<th data-class="expand">Título</th>
                                         <th>Autores</th>
-                                        <th>Localização</th>
-										<th>Código</th>
-										<th></th>
+                                        <th data-hide="phone">Localização</th>
+										<th data-hide="phone">Código</th>
+										<th data-hide="phone">Ações</th>
 									</tr>
 								</thead>
 
