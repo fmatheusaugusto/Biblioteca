@@ -71,24 +71,28 @@
 
 								<thead>
 									<tr>
-										<th class="hasinput" style="width:17%">
-											<input type="text" class="form-control" placeholder="Filter Name" />
+										<th class="hasinput" style="width:33%">
+											<input type="text" class="form-control" placeholder="Filtrar nome" />
 										</th>
-										<th class="hasinput" style="width:16%">
-											<input type="text" class="form-control" placeholder="Filter Office" />
+										<th class="hasinput" style="width:25%">
+											<input type="text" class="form-control" placeholder="Filtrar Endereço" />
 										</th>
-										<th class="hasinput" style="width:17%">
-											<input type="text" class="form-control" placeholder="Filter Age" />
+										<th class="hasinput" style="width:13%">
+											<input type="text" class="form-control" placeholder="Filtrar Tel." />
 										</th>
-										<th class="hasinput" style="width:16%">
-											<input type="text" class="form-control" placeholder="Filter Salary" />
+										<th class="hasinput" style="width:13%">
+											<input type="text" class="form-control" placeholder="Filtrar CPF" />
+										</th>
+										<th>
+
 										</th>
 									</tr>
 									<tr>
 										<th data-class="expand">Nome</th>
 										<th>Endereço</th>
-										<th data-hide="phone">Telefone</th>
+										<th data-hide="phone,tablet">Telefone</th>
 										<th data-hide="phone,tablet">CPF</th>
+										<th data-hide="phone,tablet">Ações</th>
 									</tr>
 								</thead>
 

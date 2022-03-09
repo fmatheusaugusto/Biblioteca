@@ -50,14 +50,23 @@ function inclui_usuarios(){
     $endereco_rua = $_POST['endereco_rua'];
     $endereco_numero = $_POST['endereco_numero'];
 
-    $query = "INSERT INTO usuarios VALUES ('','$nome','$telefone','$cpf','$data_nasc','$endereco_rua','$endereco_numero')";
-    mysqli_query($conexao, $query);
-
+    $query = "INSERT INTO usuarios VALUES ('','$nome','$data_nasc','$cpf','$telefone','$endereco_rua','$endereco_numero')";
+    
+	mysqli_query($conexao, $query);
 }
 
 function inclui_livros(){
 	require("conectdb.php");
-	include("../inclui_livros.php");
-    $query = "INSERT INTO livros VALUES ('$titulo','$classificacao','$autores','$codigo','$exemplar','$localizacao', ,'$data_hoje')";
-    mysqli_query($conexao, $query);
+
+	$titulo = $_POST['titulo']; 
+    $classificacao = $_POST['classificacao'];
+    $autores = $_POST['autores'];
+    $codigo = $_POST['codigo'];
+    $exemplar = $_POST['exemplar'];
+    $localizacao = $_POST['localizacao'];
+	$data_hoje = $_POST['data_hoje'];
+
+    $query = "INSERT INTO livros VALUES ('','$codigo','$titulo','$classificacao','$exemplar','$autores','$localizacao','$data_hoje')";
+	
+	mysqli_query($conexao, $query);
 }

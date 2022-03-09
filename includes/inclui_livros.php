@@ -8,7 +8,8 @@
 	$data_hoje = $_POST['data_hoje'];
 
     include ("funcoes.php");
-    include (inclui_livros());
-
-    echo "SALVO";
+    inclui_livros();
 ?>
+<script>
+    window.location.replace("http://prefeituradecassiamg.com.br/sistemas/Biblioteca/#ajax/cadastra_livro.php");
+</script>

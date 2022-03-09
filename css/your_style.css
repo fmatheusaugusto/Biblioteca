@@ -17,3 +17,8 @@
  * - BODY
  * - CUSTOM STYLES
  */
+ 
+ div.anonymous h1{
+     color: blue;
+     float: left;
+ }

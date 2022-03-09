@@ -72,17 +72,17 @@
 							
 								<thead>
 									<tr>
-										<th class="hasinput" style="width:25%">
+										<th class="hasinput" style="width:34%">
 											<input type="text" class="form-control" placeholder="Filtrar por título" />
 										</th>
-										<th class="hasinput" style="width:25%">
+										<th class="hasinput" style="width:26%">
 											<input type="text" class="form-control" placeholder="Filtrar por altor" />
 										</th>
-										<th class="hasinput" style="width:18%">
-											<input type="text" class="form-control" placeholder="Filtrar por localização" />
+										<th class="hasinput" style="width:12%">
+											<input type="text" class="form-control" placeholder="Filtrar loc." />
 										</th>
-										<th class="hasinput" style="width:15%">
-											<input type="text" class="form-control" placeholder="Filtrar por código" />
+										<th class="hasinput" style="width:12%">
+											<input type="text" class="form-control" placeholder="Filtrar cód." />
 										</th>
 										<th>
 											
@@ -91,9 +91,9 @@
 									<tr>
 										<th data-class="expand">Título</th>
                                         <th>Autores</th>
-                                        <th data-hide="phone">Localização</th>
-										<th data-hide="phone">Código</th>
-										<th data-hide="phone">Ações</th>
+                                        <th data-hide="phone,tablet">Localização</th>
+										<th data-hide="phone,tablet">Código</th>
+										<th data-hide="phone,tablet">Ações</th>
 									</tr>
 								</thead>
 

@@ -1,4 +1,7 @@
-<?php require_once("inc/init.php"); ?>
+<?php 
+require_once("inc/init.php"); 
+$verificacao=="0";
+?>
 <div class="row">
 	<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
 		<h1 class="page-title txt-color-blueDark">
@@ -10,14 +13,21 @@
 	</div>
 </div>
 
-<div class="alert alert-block alert-success">
+<div class="alert alert-block alert-success cad_usuario">
 	<a class="close" data-dismiss="alert" href="#">×</a>
 	<h4 class="alert-heading"><i class="fa fa-check-square-o"></i> Verifique a validação dos dados!</h4>
 	<p>
 		Preencha os dados cuidadosamente para garantir uma melhor experiência com o sistema
 	</p>
 </div>
-
+<script>
+	if ($verificacao="1"){
+ $("div.anonymous").show();
+}
+</script>
+<div class="anonymous">
+<center><h1>Welcome Anonymous User!</h1></center>
+</div>
 <!-- widget grid -->
 <section id="widget-grid" class="">
 
@@ -67,7 +77,7 @@
 					<!-- widget content -->
 					<div class="widget-body no-padding">
 						
-						<form action="includes/inclui_usuarios.php" method="post" class="smart-form" novalidate="novalidate">
+						<form action="includes/inclui_usuarios.php" method="post" class="smart-form" id="checkout-form">
 
 							<fieldset>
 								<div class="row">
@@ -76,17 +86,19 @@
 											<input type="text" name="nome" placeholder="Nome Completo">
 										</label>
 									</section>
-									<section class="col col-3">
+									<section class="col col-2,5">
 										<label class="input"> <i class="icon-prepend fa fa-phone"></i>
 											<input type="tel" name="telefone" placeholder="Telefone" data-mask="(99) 99999-9999">
 										</label>
 									</section>
-									<section class="col col-3">
+									<section class="col col-2,5">
 										<label class="input"> <i class="icon-prepend fa fa-user"></i>
 											<input type="text" name="cpf" placeholder="CPF" data-mask="999.999.999-99">
 										</label>
 									</section>
-									<section class="col col-3">
+								</div>
+								<div class="row">
+									<section class="col col-2,5">
 										<label class="input"> <i class="icon-prepend fa fa-user"></i>
 											<input type="date" name="data_nasc" placeholder="Data de Nascimento">
 										</label>
@@ -96,7 +108,7 @@
 
 							<fieldset>
 								<div class="row">
-									<section class="col col-10">
+									<section class="col col-6">
 										<label for="address" class="input"> <i class="icon-prepend fa fa-book"></i>
 											<input type="text" name="endereco_rua" placeholder="Rua">
 										</label>
@@ -111,6 +123,9 @@
 							<footer>
 								<button type="submit" class="btn btn-primary">
 									Salvar
+								</button>
+								<button type="button" class="btn btn-default" onclick="window.history.back();">
+									Voltar
 								</button>
 							</footer>
 						</form>
@@ -133,7 +148,9 @@
 
 </section>
 <!-- end widget grid -->
-
+<?php
+	$verificacao = "0";
+?>
 		
 <!-- SCRIPTS ON PAGE EVENT -->
 <script type="text/javascript">
@@ -184,10 +201,10 @@
 					required : true
 				},
 				telefone : {
-					required : true,
+					required : true
 				},
 				cpf : {
-					required : true,
+					required : true
 				},
 				endereco_rua : {
 					required : true
@@ -195,7 +212,7 @@
 				endereco_numero : {
 					required : true
 				},
-				data : {
+				data_nasc : {
 					required : true
 				},
 			},
@@ -205,7 +222,7 @@
 				nome : {
 					required : 'Por favor insira seu nome'
 				},
-				data : {
+				data_nasc : {
 					required : 'Por favor insira sua data de nascimento'
 				},
 				telefone : {

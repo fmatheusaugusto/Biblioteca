@@ -7,7 +7,13 @@
 		</h1>
 	</div>
 </div>
-
+<div class="alert alert-block alert-success cad_usuario">
+	<a class="close" data-dismiss="alert" href="#">×</a>
+	<h4 class="alert-heading"><i class="fa fa-check-square-o"></i> Verifique a validação dos dados!</h4>
+	<p>
+		Preencha os dados cuidadosamente para garantir uma melhor experiência com o sistema
+	</p>
+</div>
 <!-- widget grid -->
 <section id="widget-grid" class="">
 
@@ -55,7 +61,7 @@
 					<!-- widget content -->
 					<div class="widget-body no-padding">
 
-						<form action="includes/inclui_livros.php" id="cad_livros" method="post" class="smart-form">
+						<form action="includes/inclui_livros.php" method="post" class="smart-form" id="checkout-form">
 							<header>
 								Insira os dados cuidadosamente
 							</header>
@@ -63,40 +69,40 @@
 							<fieldset>
 								<div class="row">
 									<section class="col col-4">
-										<label class="input">
+										<label class="input"><i class="icon-prepend fa fa-user"></i>
 											<input type="text" name="titulo" placeholder="Título">
 										</label>
 									</section>
 									<section class="col col-4">
-										<label class="input">
+										<label class="input"><i class="icon-prepend fa fa-user"></i>
 											<input type="text" name="classificacao" placeholder="Classificação">
 										</label>
 									</section>
 									<section class="col col-4">
-										<label class="input">
+										<label class="input"><i class="icon-prepend fa fa-user"></i>
 											<input type="text" name="autores" placeholder="Autores">
 										</label>
 									</section>
 								</div>
 								<div class="row">
 									<section class="col col-2">
-										<label class="input">
+										<label class="input"><i class="icon-prepend fa fa-user"></i>
 											<input type="text" name="codigo" placeholder="Código">
 										</label>
 									</section>
 									<section class="col col-2">
-										<label class="input">
-											<input type="text" name="exemplar" placeholder="Qtd de exemplares">
+										<label class="input"><i class="icon-prepend fa fa-user"></i>
+											<input type="text" name="exemplar" placeholder="Nº exemplares">
 										</label>
 									</section>
 									<section class="col col-2">
-										<label class="input">
+										<label class="input"><i class="icon-prepend fa fa-user"></i>
 											<input type="text" name="localizacao" placeholder="Localização">
 										</label>
 									</section>
 									<input type="hidden" name="data_hoje" value= <?php echo $hoje ?>>
 								</div>
-
+							</fieldset>
 							<footer>
 								<button type="submit" class="btn btn-primary">
 									Salvar
@@ -128,6 +134,7 @@
 
 <!-- SCRIPTS ON PAGE EVENT -->
 <script type="text/javascript">
+	
 	/* DO NOT REMOVE : GLOBAL FUNCTIONS!
 	 *
 	 * pageSetUp(); WILL CALL THE FOLLOWING FUNCTIONS
@@ -160,36 +167,88 @@
 
 	pageSetUp();
 	
-	/*
-	 * ALL PAGE RELATED SCRIPTS CAN GO BELOW HERE
-	 * eg alert("my home function");
-	 * 
-	 * var pagefunction = function() {
-	 *   ...
-	 * }
-	 * loadScript("js/plugin/_PLUGIN_NAME_.js", pagefunction);
-	 * 
-	 * TO LOAD A SCRIPT:
-	 * var pagefunction = function (){ 
-	 *  loadScript(".../plugin.js", run_after_loaded);	
-	 * }
-	 * 
-	 * OR
-	 * 
-	 * loadScript(".../plugin.js", run_after_loaded);
-	 */
-
-	// PAGE RELATED SCRIPTS
 	
+	// PAGE RELATED SCRIPTS
+
 	// pagefunction
 	
 	var pagefunction = function() {
+
+		var $checkoutForm = $('#checkout-form').validate({
+		// Rules for form validation
+			rules : {
+				titulo : {
+					required : true
+				},
+				classificacao : {
+					required : true
+				},
+				autores : {
+					required : true
+				},
+				codigo : {
+					required : true
+				},
+				exemplar : {
+					required : true
+				},
+				localizacao : {
+					required : true
+				},
+			},
+	
+			// Messages for form validation
+			messages : {
+				titulo : {
+					required : 'Digite o título do livro'
+				},
+				classificacao : {
+					required : 'Digite a classificação do livro'
+				},
+				autores : {
+					required : 'Digite o autor do livro',
+				},
+				codigo : {
+					required : 'Digite o código do livro',
+				},
+				exemplar : {
+					required : 'Digite a quantidade de exemplares'
+				},
+				localizacao : {
+					required : 'Digite a localização do livro'
+				},
+			},
+	
+			// Do not change code below
+			errorPlacement : function(error, element) {
+				error.insertAfter(element.parent());
+			}
+		});
+
+		// START AND FINISH DATE
+		$('#startdate').datepicker({
+			dateFormat : 'dd.mm.yy',
+			prevText : '<i class="fa fa-chevron-left"></i>',
+			nextText : '<i class="fa fa-chevron-right"></i>',
+			onSelect : function(selectedDate) {
+				$('#finishdate').datepicker('option', 'minDate', selectedDate);
+			}
+		});
+		
+		$('#finishdate').datepicker({
+			dateFormat : 'dd.mm.yy',
+			prevText : '<i class="fa fa-chevron-left"></i>',
+			nextText : '<i class="fa fa-chevron-right"></i>',
+			onSelect : function(selectedDate) {
+				$('#startdate').datepicker('option', 'maxDate', selectedDate);
+			}
+		});
 		
 	};
 	
 	// end pagefunction
 	
-	// run pagefunction on load
-	pagefunction();
+	// Load form valisation dependency 
+	loadScript("js/plugin/jquery-form/jquery-form.min.js", pagefunction);
 
 </script>

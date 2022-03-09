@@ -55,12 +55,12 @@ $page_nav = array(
 			"livro" => array(
 				"title" => "Livros",
 				"icon" => "fa-book",
-				"url" => "ajax/form-elements.php"
+				"url" => "ajax/cadastra_livro.php"
 			),
             "usuário" => array(
 				"title" => "Usuários",
 				"icon" => "fa-user",
-				"url" => "ajax/form-templates.php"
+				"url" => "ajax/cadastra_usuario.php"
 			)
 		)
 	),
