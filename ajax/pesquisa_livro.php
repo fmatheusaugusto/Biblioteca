@@ -67,45 +67,43 @@
 						
 						<!-- widget content -->
 						<div class="widget-body no-padding">
-
-							<table id="datatable_fixed_column" class="table table-striped table-bordered" width="100%">
 							
-								<thead>
-									<tr>
-										<th class="hasinput" style="width:34%">
-											<input type="text" class="form-control" placeholder="Filtrar por título" />
-										</th>
-										<th class="hasinput" style="width:26%">
-											<input type="text" class="form-control" placeholder="Filtrar por altor" />
-										</th>
-										<th class="hasinput" style="width:12%">
-											<input type="text" class="form-control" placeholder="Filtrar loc." />
-										</th>
-										<th class="hasinput" style="width:12%">
-											<input type="text" class="form-control" placeholder="Filtrar cód." />
-										</th>
-										<th>
-											
-										</th>
-									</tr>
-									<tr>
-										<th data-class="expand">Título</th>
-                                        <th>Autores</th>
-                                        <th data-hide="phone,tablet">Localização</th>
-										<th data-hide="phone,tablet">Código</th>
-										<th data-hide="phone,tablet">Ações</th>
-									</tr>
-								</thead>
+								<table id="datatable_fixed_column" class="table table-striped table-bordered" width="100%">
+									<thead>
+										<tr>
+											<th class="hasinput" style="width:34%">
+												<input type="text" class="form-control" placeholder="Filtrar por título" />
+											</th>
+											<th class="hasinput" style="width:26%">
+												<input type="text" class="form-control" placeholder="Filtrar por altor" />
+											</th>
+											<th class="hasinput" style="width:12%">
+												<input type="text" class="form-control" placeholder="Filtrar loc." />
+											</th>
+											<th class="hasinput" style="width:12%">
+												<input type="text" class="form-control" placeholder="Filtrar cód." />
+											</th>
+											<th>
+												
+											</th>
+										</tr>
+										<tr>
+											<th data-class="expand">Título</th>
+											<th>Autores</th>
+											<th data-hide="phone,tablet">Localização</th>
+											<th data-hide="phone,tablet">Código</th>
+											<th data-hide="phone,tablet">Ações</th>
+										</tr>
+									</thead>
 
-								<tbody>
-									<?php
-										include("../includes/funcoes.php");
-										lista_livros();
-									?>
-								</tbody>
-
-							</table>
-
+									<tbody>
+										<?php
+											include("../includes/funcoes.php");
+											lista_livros();
+										?>
+									</tbody>
+								</table>
+							</form>
 						</div>
 						<!-- end widget content -->
 

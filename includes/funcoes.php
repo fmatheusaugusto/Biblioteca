@@ -21,6 +21,7 @@ function lista_usuarios()
 		$endereco_numero = $sql['endereco_numero'];
 		$telefone = $sql['telefone'];
 		$cpf = $sql['cpf'];
+		$id = $sql['id'];
 		include("lista_usuarios.php");
 	}
 }
@@ -69,4 +70,24 @@ function inclui_livros(){
     $query = "INSERT INTO livros VALUES ('','$codigo','$titulo','$classificacao','$exemplar','$autores','$localizacao','$data_hoje')";
 	
 	mysqli_query($conexao, $query);
+}
+
+function deleta_usuarios(){
+	require("conectdb.php");
+	$id=$_POST["id"];
+	$query = "DELETE FROM usuarios WHERE id=$id";
+	mysqli_query($conexao, $query);
+	echo "Id " . $id;
+}
+
+function edita_usuarios(){
+	
+}
+
+function deleta_livros(){
+	require("conectdb.php");
+	$id=$_POST["id"];
+	$query = "DELETE FROM livros WHERE id=$id";
+	mysqli_query($conexao, $query);
+	echo "Id " . $id;
 }

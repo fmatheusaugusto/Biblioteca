@@ -1,4 +1,6 @@
+
 <tr>
+    
     <td>
         <?php echo $titulo; ?>
     </td>
@@ -11,12 +13,16 @@
     <td>
         <?php echo $codigo; ?>
     </td>
+
+    <input type="hidden" name="id" value= <?php echo $id ?>>
     <td>
-        <button type="submit" class="btn btn-warning">
+        <button type="submit" name="editar_livro" class="btn btn-warning">
             Editar
         </button>
-        <button type="submit" class="btn btn-danger">
+        <button type="submit" name="excluir_livro" class="btn btn-danger">
             Excluir
         </button>
     </td>
+
 </tr>
+

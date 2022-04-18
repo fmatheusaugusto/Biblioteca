@@ -1,7 +1,4 @@
-<?php 
-require_once("inc/init.php"); 
-$verificacao=="0";
-?>
+<?php require_once("inc/init.php"); ?>
 <div class="row">
 	<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
 		<h1 class="page-title txt-color-blueDark">
@@ -13,21 +10,13 @@ $verificacao=="0";
 	</div>
 </div>
 
-<div class="alert alert-block alert-success cad_usuario">
-	<a class="close" data-dismiss="alert" href="#">×</a>
-	<h4 class="alert-heading"><i class="fa fa-check-square-o"></i> Verifique a validação dos dados!</h4>
-	<p>
-		Preencha os dados cuidadosamente para garantir uma melhor experiência com o sistema
-	</p>
-</div>
-<script>
-	if ($verificacao="1"){
- $("div.anonymous").show();
-}
-</script>
-<div class="anonymous">
-<center><h1>Welcome Anonymous User!</h1></center>
-</div>
+<?php
+	session_start();
+	if($_SESSION['alerta']=="1"){
+		include ("../includes/alert_form.php");
+	}
+	$_SESSION['alerta'] = "0";
+?>
 <!-- widget grid -->
 <section id="widget-grid" class="">
 
@@ -55,13 +44,13 @@ $verificacao=="0";
 					
 				-->
 				<header>
-					<span class="widget-icon"> <i class="fa fa-edit"></i> </span>	
+					<span class="widget-icon"> <i class="fa fa-edit"></i> </span>
 					<h2>
 						<?php
-						$hoje = date('d/m/Y');
-						echo $hoje;
+							$hoje = date('d/m/Y');
+							echo $hoje;
 						?>
-					</h2>			
+					</h2>
 				</header>
 
 				<!-- widget div-->
@@ -121,7 +110,7 @@ $verificacao=="0";
 								</div>
 							</fieldset>
 							<footer>
-								<button type="submit" class="btn btn-primary">
+								<button type="submit" name="salvar" class="btn btn-primary">
 									Salvar
 								</button>
 								<button type="button" class="btn btn-default" onclick="window.history.back();">
@@ -148,9 +137,6 @@ $verificacao=="0";
 
 </section>
 <!-- end widget grid -->
-<?php
-	$verificacao = "0";
-?>
 		
 <!-- SCRIPTS ON PAGE EVENT -->
 <script type="text/javascript">
@@ -185,7 +171,7 @@ $verificacao=="0";
 	 *
 	 */
 
-	pageSetUp();
+	/*pageSetUp();*/
 	
 	
 	// PAGE RELATED SCRIPTS

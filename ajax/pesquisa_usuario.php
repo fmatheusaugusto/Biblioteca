@@ -66,45 +66,43 @@
 
 						<!-- widget content -->
 						<div class="widget-body no-padding">
+							<form action="includes/crud_usuario.php" method="post">	
+								<table id="datatable_fixed_column" class="table table-striped table-bordered" width="100%">
+									<thead>
+										<tr>
+											<th class="hasinput" style="width:33%">
+												<input type="text" class="form-control" placeholder="Filtrar nome" />
+											</th>
+											<th class="hasinput" style="width:25%">
+												<input type="text" class="form-control" placeholder="Filtrar Endereço" />
+											</th>
+											<th class="hasinput" style="width:13%">
+												<input type="text" class="form-control" placeholder="Filtrar Tel." />
+											</th>
+											<th class="hasinput" style="width:13%">
+												<input type="text" class="form-control" placeholder="Filtrar CPF" />
+											</th>
+											<th>
 
-							<table id="datatable_fixed_column" class="table table-striped table-bordered" width="100%">
+											</th>
+										</tr>
+										<tr>
+											<th data-class="expand">Nome</th>
+											<th>Endereço</th>
+											<th data-hide="phone,tablet">Telefone</th>
+											<th data-hide="phone,tablet">CPF</th>
+											<th data-hide="phone,tablet">Ações</th>
+										</tr>
+									</thead>
 
-								<thead>
-									<tr>
-										<th class="hasinput" style="width:33%">
-											<input type="text" class="form-control" placeholder="Filtrar nome" />
-										</th>
-										<th class="hasinput" style="width:25%">
-											<input type="text" class="form-control" placeholder="Filtrar Endereço" />
-										</th>
-										<th class="hasinput" style="width:13%">
-											<input type="text" class="form-control" placeholder="Filtrar Tel." />
-										</th>
-										<th class="hasinput" style="width:13%">
-											<input type="text" class="form-control" placeholder="Filtrar CPF" />
-										</th>
-										<th>
-
-										</th>
-									</tr>
-									<tr>
-										<th data-class="expand">Nome</th>
-										<th>Endereço</th>
-										<th data-hide="phone,tablet">Telefone</th>
-										<th data-hide="phone,tablet">CPF</th>
-										<th data-hide="phone,tablet">Ações</th>
-									</tr>
-								</thead>
-
-								<tbody>
-								<?php
-										include("../includes/funcoes.php");
-										lista_usuarios();
-									?>
-								</tbody>
-
-							</table>
-
+									<tbody>
+										<?php
+											include("../includes/funcoes.php");
+											lista_usuarios();
+										?>
+									</tbody>
+								</table>
+							</form>
 						</div>
 						<!-- end widget content -->
 

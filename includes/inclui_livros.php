@@ -9,6 +9,12 @@
 
     include ("funcoes.php");
     inclui_livros();
+
+	if(isset($_POST['salvar'])){
+        session_start();
+		$_SESSION['alerta'] = "1";
+	}
+	
 ?>
 <script>
     window.location.replace("http://prefeituradecassiamg.com.br/sistemas/Biblioteca/#ajax/cadastra_livro.php");

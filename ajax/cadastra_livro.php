@@ -7,13 +7,13 @@
 		</h1>
 	</div>
 </div>
-<div class="alert alert-block alert-success cad_usuario">
-	<a class="close" data-dismiss="alert" href="#">×</a>
-	<h4 class="alert-heading"><i class="fa fa-check-square-o"></i> Verifique a validação dos dados!</h4>
-	<p>
-		Preencha os dados cuidadosamente para garantir uma melhor experiência com o sistema
-	</p>
-</div>
+<?php
+	session_start();
+	if($_SESSION['alerta']=="1"){
+		include ("../includes/alert_form.php");
+	}
+	$_SESSION['alerta'] = "0";
+?>
 <!-- widget grid -->
 <section id="widget-grid" class="">
 
@@ -104,7 +104,7 @@
 								</div>
 							</fieldset>
 							<footer>
-								<button type="submit" class="btn btn-primary">
+								<button type="submit" name="salvar" class="btn btn-primary">
 									Salvar
 								</button>
 								<button type="button" class="btn btn-default" onclick="window.history.back();">

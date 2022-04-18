@@ -1,4 +1,5 @@
 <tr>
+    <input type="hidden" name="id" value= <?php echo $id ?>>
     <td>
         <?php echo $nome; ?>
     </td>
@@ -16,10 +17,10 @@
         <?php echo $cpf; ?>
     </td>
     <td>
-        <button type="submit" class="btn btn-warning">
+        <button type="submit" name="editar_usuario"  class="btn btn-warning">
             Editar
         </button>
-        <button type="submit" class="btn btn-danger">
+        <button type="submit" name="excluir_usuario" class="btn btn-danger">
             Excluir
         </button>
     </td>
