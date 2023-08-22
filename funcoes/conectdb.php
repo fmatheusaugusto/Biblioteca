@@ -1,8 +1,8 @@
 <?php
 	@header('Content-Type: text/html; charset=utf-8');
-	$servername = "127.0.0.1";
+	$servername = "localhost";
 	$database = "biblioteca";
-	$username = "root";
+	$username = "dbuser";
 	$password = "";
 	$conexao = mysqli_connect($servername, $username, $password, $database); // Conectando a
 	mysqli_set_charset($conexao, 'utf8');
