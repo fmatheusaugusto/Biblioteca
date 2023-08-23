@@ -1,4 +1,12 @@
-/*
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0074d9; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    text-decoration: none;
+    border-radius: 5px; /* Borda arredondada */
+    font-weight: bold; /* Texto em negrito */
+}/*
  * It is advised not to edit the smartadmin_production.css
  * as this will override any changes you make in the 
  * later versions of this theme. 

@@ -37,6 +37,7 @@ function lista_livros()
 		$autores = $sql['autores'];
 		$localizacao = $sql['localizacao'];
 		$codigo = $sql['codigo'];
+		$id = $sql['id'];
 		include("lista_livros.php");
 	}
 }

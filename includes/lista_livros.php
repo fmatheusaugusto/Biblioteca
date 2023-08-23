@@ -1,6 +1,5 @@
 
 <tr>
-    
     <td>
         <?php echo $titulo; ?>
     </td>
@@ -12,17 +11,17 @@
     </td>
     <td>
         <?php echo $codigo; ?>
+        <h1 hidden> <?php echo $id; ?>
     </td>
-
-    <input type="hidden" name="id" value= <?php echo $id ?>>
     <td>
+        <!--
         <button type="submit" name="editar_livro" class="btn btn-warning">
             Editar
         </button>
-        <button type="submit" name="excluir_livro" class="btn btn-danger">
-            Excluir
-        </button>
+        -->
+        <a href="#ajax/edita_livro.php" class="botao">Editar | </a>
+        <a href="edita_livro.php">Excluir </a>
     </td>
-
+    
 </tr>
 
